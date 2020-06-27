@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sign_in_with_google">Sign In with Google</string>
+    <string name="log_in_with_facebook">Log In with Facebook</string>
+    <string name="smartmoney">SmartMoney</string>
+    <string name="icon">Icon</string>
+    <string name="profile_smartmoney_com">profile@smartmoney.com</string>
+    <string name="profile">Profile</string>
+    <string name="chart">Chart</string>
+    <string name="category">Category</string>
+</resources>

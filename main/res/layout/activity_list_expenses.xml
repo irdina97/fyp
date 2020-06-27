@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#74FF9800"
+    tools:context=".ListExpenses">
+
+    <TextView
+        android:id="@+id/tvHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="Home"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHome"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tvElectronic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electronic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/btnElectronic"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="154dp" />
+
+    <TextView
+        android:id="@+id/tvSocial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Social"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/btnSocial"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="54dp" />
+
+    <TextView
+        android:id="@+id/tvHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/btnHealth"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="166dp" />
+
+    <TextView
+        android:id="@+id/tvEducation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Education"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/btnEducation"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="265dp" />
+
+    <TextView
+        android:id="@+id/tvGuitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guitar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuitar"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="282dp" />
+
+    <TextView
+        android:id="@+id/tvPiano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Piano"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/btnPiano"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="54dp" />
+
+    <ImageButton
+        android:id="@+id/btnHealth"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/circle_button"
+        android:contentDescription="shopping"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnHome"
+        app:srcCompat="@drawable/health"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <ImageButton
+        android:id="@+id/btnGuitar"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/circle_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnElectronic"
+        app:srcCompat="@drawable/guitar"
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle_button"
+        android:contentDescription="entertainment"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/btnElectronic"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/circle_button"
+        android:contentDescription="food"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnPiano"
+        app:srcCompat="@drawable/electronic"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <ImageButton
+        android:id="@+id/btnSocial"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="39dp"
+        android:background="@drawable/circle_button"
+        android:contentDescription="sport"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/social"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteY="325dp" />
+
+    <ImageButton
+        android:id="@+id/btnEducation"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/circle_button"
+        android:contentDescription="pet"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnHealth"
+        app:srcCompat="@drawable/education"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <ImageButton
+        android:id="@+id/btnPiano"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="39dp"
+        android:background="@drawable/circle_button"
+        android:contentDescription="transport"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/piano"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteY="186dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

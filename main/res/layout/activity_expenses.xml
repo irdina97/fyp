@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Expenses"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#74FF9800"
+    tools:context=".Expenses">
+
+    <TextView
+        android:id="@+id/tvHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Entertainment"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteY="136dp" />
+
+    <TextView
+        android:id="@+id/tvElectronic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sport"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton8"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="294dp" />
+
+    <TextView
+        android:id="@+id/tvSocial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shopping"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/buttonShopping"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="36dp" />
+
+    <TextView
+        android:id="@+id/tvHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton9"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="182dp" />
+
+    <TextView
+        android:id="@+id/tvEducation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="182dp" />
+
+    <TextView
+        android:id="@+id/tvGuitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transport"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton10"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="280dp" />
+
+    <TextView
+        android:id="@+id/tvPiano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/travel"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="50dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle_button"
+        android:contentDescription="add"
+        android:tint="#1B1818"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton9"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/buttonShopping"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle_button"
+        android:contentDescription="shopping"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:srcCompat="@drawable/shopping"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonShopping"
+        app:srcCompat="@drawable/travel"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:background="@drawable/circle_button"
+        android:contentDescription="entertainment"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/game"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="39dp"
+        android:background="@drawable/circle_button"
+        android:contentDescription="food"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        app:srcCompat="@drawable/food"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="39dp"
+        android:background="@drawable/circle_button"
+        android:contentDescription="sport"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:srcCompat="@drawable/sport"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle_button"
+        android:contentDescription="pet"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/buttonShopping"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+        app:srcCompat="@drawable/pet"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle_button"
+        android:contentDescription="transport"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/imageButton9"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton8"
+        app:srcCompat="@drawable/transport"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <!--<EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="48dp"
+        android:background="@android:color/holo_orange_light"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/keyboard"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill,LabelFor,MissingConstraints,TextFields" />
+
+    <com.example.fyp2.MyKeyboard
+        android:id="@+id/keyboard"
+        android:layout_width="413dp"
+        android:layout_height="195dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="539dp" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

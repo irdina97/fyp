@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Smart Money</string>
+
+    <string name="nagivation_drawer_open">Open navigation drawer</string>
+    <string name="nagivation_drawer_close">Close navigation drawer</string>
+    <string name="sign_in_with_google">Sign In with Google</string>
+    <string name="log_in_with_facebook">Log In with Facebook</string>
+    <string name="smartmoney">SmartMoney</string>
+    <string name="icon">Icon</string>
+    <string name="profile_smartmoney_com">profile@smartmoney.com</string>
+    <string name="profile">Profile</string>
+    <string name="chart">Chart</string>
+    <string name="category">Category</string>
+    <string name="settings_fragment">Settings fragment</string>
+    <string name="chart_fragment">Chart fragment</string>
+    <string name="category_fragment">Category fragment</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="travel">Travel</string>
+    <string name="income">Income</string>
+    <string name="reward">Reward</string>
+    <string name="sale">Sale</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="result">Result</string>
+    <string name="saving">Saving</string>
+    <string name="refund">Refund</string>
+    <string name="pie_chart_title">Calories Burned vs. Calories Consumed</string>
+    <string name="inside_title">Input the \n numbers below!</string>
+    <string name="burn">Burn.</string>
+    <string name="cons">Cons.</string>
+    <string name="add">Add</string>
+</resources>

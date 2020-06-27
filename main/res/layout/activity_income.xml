@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#74FF9800"
+    tools:context=".Income">
+
+
+    <ImageButton
+        android:id="@+id/btnIncome"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/circle_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnReward"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/income"
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/btnReward"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="36dp"
+        android:background="@drawable/circle_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/reward"
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <ImageButton
+        android:id="@+id/btnSale"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/circle_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnIncome"
+        app:srcCompat="@drawable/sale"
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <ImageButton
+        android:id="@+id/btnRefund"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnSaving"
+        app:layout_constraintTop_toTopOf="@+id/tvReward"
+        app:srcCompat="@drawable/refunds"
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/btnSaving"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReward"
+        app:srcCompat="@drawable/saving"
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle_button"
+        android:tint="#1B1818"
+        app:layout_constraintStart_toEndOf="@+id/btnRefund"
+        app:layout_constraintTop_toBottomOf="@+id/btnSale"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tvIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/income"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/btnReward"
+        tools:layout_editor_absoluteX="43dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvReward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reward"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/btnIncome"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="161dp" />
+
+    <TextView
+        android:id="@+id/tvSale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sale"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/btnSale"
+        tools:layout_editor_absoluteX="299dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvSaving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saving"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaving"
+        tools:layout_editor_absoluteX="51dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvRefund"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/refund"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/btnRefund"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="164dp" />
+
+   <!-- <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="50dp"
+        android:background="@android:color/holo_orange_light"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/keyboard"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill,LabelFor,MissingConstraints,TextFields" />
+
+    <com.example.fyp2.MyKeyboard
+        android:id="@+id/keyboard"
+        android:layout_width="413dp"
+        android:layout_height="195dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="539dp" />-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
